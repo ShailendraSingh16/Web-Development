@@ -3,31 +3,50 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CSS Selectors</title>
-  <link rel="stylesheet" href="./style.css" />
+  <title>CSS Box Model</title>
+  <style>
+    div {
+      height: 200px;
+      width: 200px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    #first {
+      background-color: cadetblue;
+      padding: 20px;
+      border: 10px solid black;
+    }
+
+    #second {
+      background-color: gold;
+      border: solid black;
+      border-width: 20px 10px;
+      margin-left: 260px;
+    }
+
+    #third {
+      background-color: indianred;
+      border: 10px solid black;
+      margin-left: 40px;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>CSS Selectors</h1>
-  <h2>Applying CSS to Different Parts of HTML</h2>
-  <!-- TODO 1: Set the CSS for all paragraph tags to "color: red" -->
-  <p class="note">1. The element selector targets elements based on their HTML tag name.</p>
-  
+  <div id="first">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+      id magna pulvinar, ultricies lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+      dolor metus, laoreet ac convallis sit amet, efficitur sed dolor. </p>
+  </div>
+  <div id="second">
 
-  <ol>
-    <!-- TODO 2: Set the CSS for all elements with a class of "note" to "font-size: 20px" -->
-    <li class="note" value="2">Class selectors target elements based on the value of the class attribute.</li>
+  </div>
+  <div id="third">
 
-    <!-- TODO 3: Set the CSS for the element with an id of "id-selector-demo" to "color: green" -->
-    <li class="note" id="id-selector-demo" value="3">ID selectors target elements based on the value of the id
-      attribute.</li>
-
-    <!-- TODO 4: Set the CSS for the li elements that have the "value" attribute set to "4" to have "color: blue" -->
-    <li class="note" value="4">Attribute selectors target elements based on their attributes and values.</li>
-
-    <!-- TODO 5: Set all elements to have "text-align: center" -->
-    <li class="note" value="5">The universal selector targets all elements.</li>
-  </ol>
+  </div>
 </body>
 
 </html>
